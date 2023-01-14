@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>EDM Music Store</title>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon.ico">
+
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">EDM Music Store</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input id="searchBar" class="form-control" type="text" placeholder="Search..."
+                    aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-dark " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <!-- Navbar-->
+       
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            
+            <li class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                    <span class="valoreCarrello"></span>
+                    <i class="fa fa-shopping-cart me-3" aria-hidden="true"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><span class="dropdown-item totale-carrello" href="#!"></span></li>
+                    <hr class="dropdown-divider" />
+                    <li><a class="dropdown-item" href="#!">Carrello</a></li>
+                    <li></li>
+                    <li>
+                    </li>
+                    
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            
+            <li class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                    
+                    <i class="fas fa-user fa-fw"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Account</a></li>
+                    <li><a class="dropdown-item" href="#!">Shop</a></li>
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"><i class="fa fa-user"></i> Personal</div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div> Dashboard
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="layout-static.html">General</a>
+                                <a class="nav-link" href="layout-sidenav-light.html">Personal</a>
+                            </nav>
+                        </div>
+                        <div class="sb-sidenav-menu-heading"><i class="fa fa-bar-chart"></i> Discover Charts</div>
+                        <a class="nav-link" href="charts.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa fa-bomb" aria-hidden="true"></i>
+                                Global Top 10
+                        </a>
+                        <a class="nav-link" href="chartsGeneri.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa fa-music" aria-hidden="true"></i>
+                            </div>
+                            Genres Charts
+                            <div class="sb-sidenav"></div>
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Other</div>
+                        <a class="nav-link" href="401.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Festivals
+                        </a>
+                        <a class="nav-link" href="samplePacks.html">
+                            <div class="sb-nav-link-icon"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
+                            Loops & Stems
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p>Christian De Simone</p>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4 text-white">EDM Music Store</h1>
+                    <hr>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active text-white">Latest Releases
+
+                            <hr>
+                        </li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card genere bg-dark text-white mb-4">
+                                <div class="card-body">Techno</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="card-link small text-white stretched-link" href="Genres.html">View
+                                        Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card genere bg-primary text-white mb-4">
+                                <div class="card-body">Trance</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="card-link small text-white stretched-link" href="Genres.html">View
+                                        Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card genere bg-warning text-white mb-4">
+                                <div class="card-body">Tech House</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="card-link small text-white stretched-link" href="Genres.html">View
+                                        Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card genere bg-danger text-white mb-4">
+                                <div class="card-body">Drum & Bass</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="card-link small text-white stretched-link" href="Genres.html">View
+                                        Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INIZIO ROW -->
+                    <div class="row caroselloBox">
+                        <!--  Primo carousel -->
+                        <div class="col-xl-6 mb-4">
+                            <a href="Genres.html">
+
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item main active">
+                                            <img style="width:600px" src="./assets/img/techno.png" alt="techno">
+                                        </div>
+
+
+                                        <div class="carousel-item main">
+                                            <img src="./assets/img/asot.png" class="d-block w-100" alt="...">
+                                        </div>
+
+
+                                        <div class="carousel-item main">
+                                            <img src="./assets/img/monrroePack.png" class="d-block w-100" alt="monrroePack">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                                <h4 class="text-white ">Discover all genres</h4>
+                            </a>
+                        </div>
+                        <!--  Secondo carousel -->
+                        <div class="col-xl-6 mb-4">
+                            <a href="Interviews.html">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/amelie.png" class="d-block w-100" alt="...">
+                                        </div>
+
+
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/armin.png" class="d-block w-100" alt="...">
+                                        </div>
+
+
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/claptone.png" class="d-block w-100" alt="...">
+                                        </div>
+
+
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/monrroe.png" class="d-block w-100" alt="...">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h4 class="text-white ">Interviews</h4>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- FINE ROW -->
+                    <hr>
+                </div>
+                <div class="row">
+                    <a href="festivals.html">
+                        <h4 class="text-white px-4 ">Festivals</h4>
+                    </a>
+                    <div class="col-xl-12 mb-4">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item festival active p-4">
+                                    <img src="./assets/img/tomorrowland.png" class=" d-block w-100" alt="TML">
+                                    <h3 class="text-white">Tomorroland</h3>
+                                </div>
+                                <div class="carousel-item festival  p-4">
+                                    <img src="./assets/img/luminosity.png" class="d-block w-100" alt="Lumy">
+                                    <h3 class="text-white">Luminosity Beach</h3>
+                                </div>
+                                <div class="carousel-item festival p-4">
+                                    <img src="./assets/img/ultra.png" class=" d-block w-100" alt="Ultra">
+                                    <h3 class="text-white">Ultra Music Festival Miami</h3>
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <a href="festivals.html">
+                            <h4 class="text-white px-4 ">Info & Line up</h4>
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <hr>
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Christian De Simone 2022
+
+                            <a href=""><i class="fa fa-camera text-muted" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-cloud text-muted" aria-hidden="true"></i></i></a>
+                            <a href=""><i class="fa fa-rss text-muted" aria-hidden="true"></i></i></i></a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-muted">Privacy Policy</a>
+                            &middot;
+                            <a href="#" class="text-muted">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+
+</body>
+
+</html>

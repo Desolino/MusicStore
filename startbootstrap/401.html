@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Festivals</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">EDM Music Store</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                    class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input id="searchBar" class="form-control" type="text" placeholder="Search..."
+                        aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-dark " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+    
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+    
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="valoreCarrello"></span>
+                        <i class="fa fa-shopping-cart me-3" aria-hidden="true"></i>
+                        <i class="fas fa-user fa-fw"></i>
+                    </a>
+    
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Account</a></li>
+                        <li><a class="dropdown-item" href="#!">Shop</a></li>
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading"><i class="fa fa-user"></i> Personal</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div> Dashboard
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                                data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">General</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Personal</a>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading"><i class="fa fa-bar-chart"></i> Discover Charts</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon">
+                                    <i class="fa fa-bomb" aria-hidden="true"></i>
+                                    Global Top 10
+                            </a>
+                            <a class="nav-link" href="chartsGeneri.html">
+                                <div class="sb-nav-link-icon">
+                                    <i class="fa fa-music" aria-hidden="true"></i>
+                                </div>
+                                Genres Charts
+                                <div class="sb-sidenav"></div>
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Other</div>
+                            <a class="nav-link" href="401.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Festivals
+                            </a>
+                            <a class="nav-link" href="SamplePacks.html">
+                                <div class="sb-nav-link-icon"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
+                                Loops & Stems
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <p>Christian De Simone</p>
+    
+                        </div>
+    
+                    </div>
+                </nav>
+            </div>
+        <div class="container-fluid">
+                 
+
+                <div class="row">
+                    <a href="festivals.html">
+                        <h4 class="text-white px-4 ">Festivals</h4>
+                    </a>
+                    <div class="col-xl-12 mb-4">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item festival active p-4">
+                                    <img src="./assets/img/tomorrowland.png" class=" d-block w-100" alt="TML">
+                                    <h3 class="text-white">Tomorroland</h3>
+                                </div>
+                                <div class="carousel-item festival  p-4">
+                                    <img src="./assets/img/luminosity.png" class="d-block w-100" alt="Lumy">
+                                    <h3 class="text-white">Luminosity Beach</h3>
+                                </div>
+                                <div class="carousel-item festival p-4">
+                                    <img src="./assets/img/ultra.png" class=" d-block w-100" alt="Ultra">
+                                    <h3 class="text-white">Ultra Music Festival Miami</h3>
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <a href="festivals.html">
+                            <h4 class="text-white px-4 ">Info & Line up</h4>                            
+                        </a>
+                        <ul>
+                            
+                            <li class="festival-list"><h5 class="px-4 text-white ">Tomorroland:</h5></li>
+                                <p class="px-5 text-white ">People of Tomorrow,
+                                    In 2023 you will witness the rise of a magnificent tale in the history of Tomorrowland's Great Library. Our destination lies high on the horizon. Prepare yourself for a beautiful adventure on July 21 - 23 and July 28 - 30.
+                                    Learn more about Tomorrowland 2023 - Adscendo on <a href="https://adscendo.tomorrowland.com/">adscendo.tomorrowland.com.</a>                                   
+                                    Pre-register for the Tomorrowland 2023 ticket sales in your Tomorrowland Account.</p>
+                                <p class="px-5 text-white ">In 2022, Tomorrowland made its grand return to the beautiful and unique scenery of De Schorre, welcoming more than 600,000 People of Tomorrow to celebrate together during 3 wonderful weekends of magic. The 16th edition of Tomorrowland revolved around a magnificent new tale ‘The Reflection of Love’, symbolizing the positive energy the festival stands for. The whole world united again in one magical place filled with energy and love, embracing the gift of life and reflecting all that is positive from around the globe while enjoying mesmerizing performances of more than 800 of the planet’s finest electronic artists, including Alesso, Amelie Lens, Armin van Buuren, Charlotte de Witte, Dimitri Vegas & Like Mike, Diplo, Eric Prydz, Lost Frequencies, Marshmello, Martin Garrix, Paul Kalkbrenner and many more…</p>
+                            <li class="festival-list"><h5 class="px-4 text-white ">Luminosity:</h5></li>
+                                <p class="px-5 text-white ">Every year Luminosity Events welcomes thousands of trance lovers from all around the globe for the annual Luminosity Beach Festival. After an incredible edition in June 2022, we can now announce that we will be back in 2023 from Thursday June 22 till Sunday June 25!Tickets for the 2023 edition are available now!   
+                                    Since its humble beginnings in 2007, Luminosity Events has set itself on the map as a pure trance and exotic getaway for music lovers in the region and those adventurous enough to look further than the standard large-scale festivals in Europe.
+                                    Make sure to get them <a href="https://shop.paylogic.com/0897e8c628b44807952013ada972dba1/tickets">here!</a>
+                                </p>
+                            <li class="festival-list"><h5 class="px-4 text-white ">Ultra Music Festival Miami:</h5></li>
+                            <p class="px-5 text-white ">Ultra Music Festival(UMF) is an annual outdoor electronic music festival that takes place during March in Miami, Florida. 
+                                It was first held on Miami Beach, but besides a tenure at Bicentennial Park, and briefly being held at Virginia Key in 2019, it has primarily been held at Bayfront Park in downtown Miami.                                                   
+                                The festival is held alongside the Winter Music Conference—an event focusing on the electronic music industry (which was acquired by Ultra outright in 2018), and Miami Music Week—a larger program of electronic music concerts and parties held across the region, with both events usually leading into Ultra.                     
+                                Alongside the flagship event in Miami, Ultra has spawned a larger series of international franchises under the blanket branding Ultra Worldwide, which have included locations such as Croatia, South Africa, South Korea, Singapore, Mexico, Brazil, Colombia, and others.
+                                Info and tickets <a href="https://ultramusicfestival.com/">here!</a>
+                            </p>        
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="layoutError_footer">
+                    <footer class="py-4 bg-light mt-auto">
+                        <div class="container-fluid px-4">
+                            <div class="d-flex align-items-center justify-content-between small">
+                                <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                                <div>
+                                    <a href="#">Privacy Policy</a>
+                                    &middot;
+                                    <a href="#">Terms &amp; Conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -211,5 +211,17 @@ window.addEventListener('DOMContentLoaded', event => {
 let generalChartEndpoint = "https://api.music.apple.com/v1/catalog/{storefront}/charts";
 //let genereChart=["trance","techno","techouse","drum & bass"];
 let genereChart= "trance"
-let genereChartEndpoint = `https://api.music.apple.com/v1/catalog/{storefront}/charts?genre=${genereChart}`;
-//farlo con asyn await 
+let searchChart= document.querySelector('#searchBarChart')
+console.log(searchChart.value)
+let genereChartEndpoint = `https://api.music.apple.com/v1/catalog/us/charts`;
+let buttonSearch = document.querySelector('#btnSearchChart')
+console.log(buttonSearch)
+buttonSearch.addEventListener('click',prendiChart)
+
+//farlo con async await   
+async function prendiChart(){
+    
+    let responseChart= await fetch(genereChartEndpoint)
+    console.log(searchChart.value)
+    console.log(responseChart)
+}
